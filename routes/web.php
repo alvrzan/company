@@ -15,17 +15,15 @@ use Inertia\Inertia;
 |
 */
 
-Route::get('/pr', function () {
-    return Inertia::render('Welcome', [
-        'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
+Route::get('/', function () {
+    return Inertia::render('HomePage', [
         'laravelVersion' => Application::VERSION,
         'phpVersion' => PHP_VERSION,
     ]);
 });
 
-Route::get('/', function () {
-    return Inertia::render('pr', [
+Route::get('/manual', function () {
+    return Inertia::render('Manual', [
         'laravelVersion' => Application::VERSION,
         'phpVersion' => PHP_VERSION,
     ]);
