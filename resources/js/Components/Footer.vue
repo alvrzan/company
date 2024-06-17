@@ -1,6 +1,6 @@
 <template>
     <div class="bg-[#091007] text-white py-16 px-4">
-        <div class="container mx-auto">
+        <div class="container mx-auto ml-4">
             <h1
                 class="font-semibold text-3xl text-primary_green mb-8 drop-shadow-lg"
             >

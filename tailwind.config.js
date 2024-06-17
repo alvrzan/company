@@ -1,8 +1,10 @@
+// tailwind.config.js
+
 import defaultTheme from "tailwindcss/defaultTheme";
 import forms from "@tailwindcss/forms";
 import typography from "@tailwindcss/typography";
+import tailwindcssTextshadow from "tailwindcss-textshadow";
 
-/** @type {import('tailwindcss').Config} */
 export default {
     content: [
         "./vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php",
@@ -22,8 +24,17 @@ export default {
                 gradient_first_dark_green: "#1D2F1A",
                 gradient_first_light_green: "#4A710C",
             },
+            textShadow: {
+                sm: "1px 1px 2px rgba(255, 255, 255, 0.3)",
+                md: "1px 2px 20px rgba(255, 255, 255, 0.6)",
+                lg: "4px 4px 6px rgba(255, 255, 255, 0.5)",
+            },
         },
     },
 
-    plugins: [forms, typography],
+    plugins: [
+        forms,
+        typography,
+        tailwindcssTextshadow,
+    ],
 };

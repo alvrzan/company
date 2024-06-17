@@ -1,7 +1,7 @@
 <template>
     <div class="text-white mx-8">
-        <div class="flex justify-between items-center">
-            <div>
+        <div class="flex justify-between md:justify-around md:space-x-52 items-center">
+            <div class="">
                 <h1
                     class="font-semibold text-3xl text-primary_green drop-shadow-lg"
                 >
