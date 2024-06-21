@@ -16,14 +16,18 @@
             to global markets.
         </p>
         <div class="space-y-4 space-x-4 md:space-x-6 p-4 mt-8 mb-8">
-            <button class="bg-[#ADFF2C] text-[#1D2F1A] rounded-lg h-12 w-32">
+            <button
+                class="bg-[#ADFF2C] text-[#1D2F1A] rounded-lg h-12 w-32 font-bold"
+            >
                 Get Started
             </button>
-            <button
-                class="bg-[#ffffff53] text-white rounded-lg h-12 w-32 drop-shadow-lg"
-            >
-                Contact Us
-            </button>
+            <a href="contact-us">
+                <button
+                    class="bg-[#ffffff53] text-white rounded-lg h-12 w-32 drop-shadow-lg font-bold"
+                >
+                    Contact Us
+                </button>
+            </a>
         </div>
     </div>
 </template>

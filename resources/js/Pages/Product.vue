@@ -29,11 +29,13 @@
                     'order-2': index % 2 === 0,
                     'md:order-1': index % 2 === 0,
                     'order-2': index % 2 !== 0,
-                    'md:order-2': index % 2 !== 0,
+                    'md:order-1': index % 2 !== 0,
                 }"
                 class="my-10 md:my-20 mx-4 md:mx-20 text-lg md:text-2xl"
             >
-                <h1 class="font-bold text-4xl">{{ product.name }}</h1>
+                <h1 class="font-montserrat font-semibold text-4xl">
+                    {{ product.name }}
+                </h1>
                 <p class="text-base md:text-lg my-2 md:my-4 text-[#FFFFFFB2]">
                     {{ product.description }}
                 </p>
@@ -55,19 +57,22 @@
                     </span>
                 </div>
                 <div
-                    class="flex justify-center md:justify-start gap-4 md:space-x-4 mt-4 md:mt-10 font-bold"
+                    class="flex justify-center md:justify-start gap-4 md:space-x-4 mt-4 md:mt-10 font-montserrat font-mediu"
                 >
-                    <button class="bg-[#4A651E99] rounded-lg px-4 md:px-6 py-2 whitespace-nowrap">
+                    <button
+                        class="bg-[#4A651E99] rounded-lg px-4 md:px-6 py-2 whitespace-nowrap font-bold"
+                    >
                         + Keranjang
                     </button>
                     <button
-                        class="bg-[#ADFF2C] rounded-lg px-4 md:px-6 py-2 text-[#1D2F1A] whitespace-nowrap"
+                        class="bg-[#ADFF2C] rounded-lg px-4 md:px-6 py-2 text-[#1D2F1A] whitespace-nowrap font-bold"
                     >
                         Beli Sekarang
                     </button>
                 </div>
             </div>
         </div>
+        <div></div>
     </AppLayout>
 </template>
 
@@ -108,4 +113,14 @@ const products = ref([
         image: "/images/coffee.jpg",
     },
 ]);
+
+// Menggunakan forEach
+products.value.forEach((product) => {
+    console.log(product.name);
+});
+
+// Menggunakan map
+products.value.map((product) => {
+    console.log(product.name);
+});
 </script>

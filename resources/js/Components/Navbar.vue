@@ -6,7 +6,7 @@
             <a href="/">
                 <div class="flex items-center">
                     <img src="/icon/egs.svg" alt="logo" class="mr-4 md:ml-4" />
-                    <h1 class="text-white text-2xl drop-shadow-lg font-bold">
+                    <h1 class="text-white lg:text-2xl drop-shadow-lg font-bold">
                         Exploresia Growth Seedonesia
                     </h1>
                 </div>
@@ -77,6 +77,11 @@
                     >
                         Register
                     </button>
+                </a>
+            </div>
+            <div class="pr-5">
+                <a href="/profile">
+                    <img src="/icon/account.svg" alt="Account" />
                 </a>
             </div>
         </div>

@@ -1,11 +1,11 @@
 // tailwind.config.js
 
-import defaultTheme from "tailwindcss/defaultTheme";
-import forms from "@tailwindcss/forms";
-import typography from "@tailwindcss/typography";
-import tailwindcssTextshadow from "tailwindcss-textshadow";
+const defaultTheme = require("tailwindcss/defaultTheme");
+const forms = require("@tailwindcss/forms");
+const typography = require("@tailwindcss/typography");
+const tailwindcssTextshadow = require("tailwindcss-textshadow");
 
-export default {
+module.exports = {
     content: [
         "./vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php",
         "./vendor/laravel/jetstream/**/*.blade.php",
@@ -18,6 +18,18 @@ export default {
         extend: {
             fontFamily: {
                 sans: ["Figtree", ...defaultTheme.fontFamily.sans],
+                montserrat: ["Montserrat", "sans-serif"],
+            },
+            fontWeight: {
+                thin: 100,
+                extralight: 200,
+                light: 300,
+                normal: 400,
+                medium: 500,
+                semibold: 600,
+                bold: 700,
+                extrabold: 800,
+                black: 900,
             },
             colors: {
                 primary_green: "#ADFF2C",
@@ -36,5 +48,6 @@ export default {
         forms,
         typography,
         tailwindcssTextshadow,
+        require("@tailwindcss/aspect-ratio"),
     ],
 };

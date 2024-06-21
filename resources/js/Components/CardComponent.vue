@@ -1,6 +1,6 @@
 <template>
     <div class="text-white mx-8">
-        <div class="flex justify-between md:justify-around md:space-x-52 items-center">
+        <div class="flex justify-between md:justify-around space-x-[1rem] md:space-x-[40rem] items-center">
             <div class="">
                 <h1
                     class="font-semibold text-3xl text-primary_green drop-shadow-lg"
@@ -87,7 +87,7 @@ const cards = reactive([
         description: "Awaken Your sense of Love",
         price: "1.500.000.000",
         rating: "5.0",
-        sold: "10 millions",
+        sold: "10M",
         image: "/images/alvrzan.jpg",
     },
     {
@@ -96,8 +96,8 @@ const cards = reactive([
         description: "Awaken Your Senses with Grade B Gayo!",
         price: "100.000",
         rating: "5.0",
-        sold: "10",
-        image: "/images/coffee_grade_b.jpg",
+        sold: "900k",
+        image: "/images/coffee.jpg",
     },
     {
         id: 3,
@@ -105,8 +105,8 @@ const cards = reactive([
         description: "A favored choice among tea lovers",
         price: "70.000",
         rating: "5.0",
-        sold: "7",
-        image: "/images/black_tea_grade_a.jpg",
+        sold: "798k",
+        image: "/images/cup.jpg",
     },
     // Tambahkan kartu lain jika diperlukan
 ]);

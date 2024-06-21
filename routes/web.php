@@ -34,6 +34,13 @@ Route::get('/about', function () {
     ]);
 });
 
+Route::get('/contact-us', function () {
+    return Inertia::render('ContactUs', [
+        'laravelVersion' => Application::VERSION,
+        'phpVersion' => PHP_VERSION,
+    ]);
+});
+
 Route::get('/manual', function () {
     return Inertia::render('Manual', [
         'laravelVersion' => Application::VERSION,
@@ -48,12 +55,12 @@ Route::get('/product', function () {
     ]);
 });
 
-// Route::middleware([
-//     'auth:sanctum',
-//     config('jetstream.auth_session'),
-//     'verified',
-// ])->group(function () {
-//     Route::get('/dashboard', function () {
-//         return Inertia::render('Dashboard');
-//     })->name('dashboard');
-// });
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified',
+])->group(function () {
+    Route::get('/dashboard', function () {
+        return Inertia::render('Dashboard');
+    })->name('dashboard');
+});

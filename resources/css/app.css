@@ -1,3 +1,20 @@
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url("/fonts/Montserrat/Montserrat-VariableFont_wght.ttf")
+        format("truetype");
+}
+
+@layer utilities {
+    .border-gradient {
+        --tw-border-opacity: 1;
+        border-color: rgba(229, 231, 235, var(--tw-border-opacity));
+        border-color: linear-gradient(to right, #ef4444, #f59e0b, #10b981);
+    }
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
