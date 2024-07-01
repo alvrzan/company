@@ -1,11 +1,7 @@
 <template>
     <Head title="Manual" />
     <AppLayout>
-        <ManualCardComponent></ManualCardComponent>
-        <!-- Full-width fluid until the `md` breakpoint, then lock to container -->
-        <div class="md:container md:mx-auto bg-red-900">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro aliquid in exercitationem eum veniam dicta amet fugiat facere, quae voluptate cumque quam fugit. Modi id a maxime fuga similique debitis?
-        </div>
+        <ManualCardComponent :items="data" />
     </AppLayout>
 </template>
 
@@ -13,4 +9,14 @@
 import AppLayout from "@/Layouts/AppLayout.vue";
 import ManualCardComponent from "@/Components/ManualCardComponent.vue";
 import { Head } from "@inertiajs/vue3";
+import { ref } from "vue";
+
+const data = ref([
+    { text: "How to register or log in to an account" },
+    { text: "How to change the password" },
+    { text: "How to change the language" },
+    { text: "How to buy a product" },
+    { text: "How to change a products in the Shopping Cart" },
+    { text: "How to use the Contact Us feature" },
+]);
 </script>

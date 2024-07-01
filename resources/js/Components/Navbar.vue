@@ -6,7 +6,9 @@
             <a href="/">
                 <div class="flex items-center">
                     <img src="/icon/egs.svg" alt="logo" class="mr-4 md:ml-4" />
-                    <h1 class="text-white lg:text-2xl drop-shadow-lg font-bold">
+                    <h1
+                        class="text-white lg:text-xl drop-shadow-lg font-semibold"
+                    >
                         Exploresia Growth Seedonesia
                     </h1>
                 </div>
@@ -40,7 +42,7 @@
             class="transition-all duration-1000 ease flex flex-col md:flex-row justify-end items-center w-full md:w-auto"
         >
             <ul
-                class="flex flex-col mt-4 md:mt-0 mb-4 md:mb-0 md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4 text-white/60 font-semibold text-lg drop-shadow-lg"
+                class="flex flex-col mt-4 md:mt-0 mb-4 md:mb-0 md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4 text-white/60 font-semibold text-md drop-shadow-lg"
             >
                 <li
                     v-for="(item, index) in menuItems"
@@ -63,23 +65,23 @@
             <div
                 class="flex flex-col md:mx-8 items-center md:flex-row space-y-4 md:space-y-0 md:space-x-4"
             >
-                <a href="login">
+                <inertia-link href="/auth/google">
                     <button
-                        class="rounded-xl w-24 h-10 bg-white/25 text-lg font-bold drop-shadow-lg"
+                        class="rounded-xl w-24 h-10 bg-white/25 text-md font-bold drop-shadow-lg"
                     >
                         Login
                     </button>
-                </a>
+                </inertia-link>
 
                 <a href="register">
                     <button
-                        class="rounded-xl w-24 h-10 bg-[#ADFF2C] text-[#1D2F1A] text-lg font-bold drop-shadow-lg"
+                        class="rounded-xl w-24 h-10 bg-[#ADFF2C] text-[#1D2F1A] text-md font-bold drop-shadow-lg"
                     >
                         Register
                     </button>
                 </a>
             </div>
-            <div class="pr-5">
+            <div class="pr-0 md:pr-5 mt-4 md:mt-0">
                 <a href="/profile">
                     <img src="/icon/account.svg" alt="Account" />
                 </a>
@@ -90,6 +92,7 @@
 
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from "vue";
+import { InertiaLink } from '@inertiajs/inertia-vue3';
 
 const currentRoute = ref(window.location.pathname);
 const menuItems = ref([

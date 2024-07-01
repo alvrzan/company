@@ -25,7 +25,7 @@ module.exports = {
                 extralight: 200,
                 light: 300,
                 normal: 400,
-                medium: 500,
+                md: 500,
                 semibold: 600,
                 bold: 700,
                 extrabold: 800,
@@ -37,6 +37,7 @@ module.exports = {
                 gradient_first_light_green: "#4A710C",
             },
             textShadow: {
+                default: "2px 2px 5px rgba(0, 0, 0, 0.5)",
                 sm: "1px 1px 2px rgba(255, 255, 255, 0.3)",
                 md: "1px 2px 20px rgba(255, 255, 255, 0.6)",
                 lg: "4px 4px 6px rgba(255, 255, 255, 0.5)",
