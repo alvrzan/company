@@ -1,9 +1,7 @@
 <template>
-    <Head title="EGS" />
-        <main>
-            <slot></slot>
-        </main>
+    <main>
+        <slot></slot>
+    </main>
 </template>
 
-<script setup>
-</script>
+<script setup></script>

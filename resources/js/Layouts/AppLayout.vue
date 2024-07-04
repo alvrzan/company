@@ -1,5 +1,4 @@
 <template>
-    <Head title="EGS" />
     <div>
         <Navbar />
         <main>

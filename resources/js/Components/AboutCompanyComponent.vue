@@ -32,31 +32,37 @@
                     src="icon/berinovasi.svg"
                     alt="text-icon"
                     class="text-center"
+                    width="980"
                 />
             </div>
-            <p class="max-w-3xl mx-auto text-3xl">
-                Kami percaya bahwa komitmen yang kuat untuk mengekspor
-                produk-produk berkualitas dari Indonesia sangatlah penting.
-                Dorongan berkelanjutan kami untuk inovasi dan pengembangan
-                produk bertujuan untuk memenuhi permintaan pasar global. Selain
-                itu, membina kemitraan internasional secara aktif akan
-                memfasilitasi perdagangan yang saling menguntungkan. Oleh karena
-                itu, kami bertekad untuk menjadi mitra yang dapat diandalkan
-                dalam memajukan industri ekspor Indonesia ke tingkat global yang
-                lebih tinggi. Bergabunglah bersama kami dalam perjalanan menuju
-                keunggulan dalam perdagangan global!
-            </p>
+            <div class="grid grid-cols-1">
+                <p class="mx-auto text-justify text-2xl py-4 md:text-center">
+                    Kami percaya bahwa komitmen yang kuat untuk mengekspor
+                    produk-produk berkualitas dari Indonesia sangatlah penting.
+                    Dorongan berkelanjutan kami untuk inovasi dan pengembangan
+                    produk bertujuan untuk memenuhi permintaan pasar global.
+                </p>
+                <p class="mx-auto text-justify text-2xl py-4 md:text-center">
+                    Selain itu, membina kemitraan internasional secara aktif
+                    akan memfasilitasi perdagangan yang saling menguntungkan.
+                    Oleh karena itu, kami bertekad untuk menjadi mitra yang
+                    dapat diandalkan dalam memajukan industri ekspor Indonesia.
+                </p>
+            </div>
         </div>
-
         <!-- Section: Misi Kami -->
         <div class="bg-[#1E282D] p-6 rounded-lg mb-8">
-            <h3 class="text-[#ADFF2C] text-xl font-bold mb-4">Misi Kami</h3>
+            <h3 class="text-[#ADFF2C] text-3xl text-center font-bold mb-4">
+                Misi Kami
+            </h3>
             <div class="grid md:grid-cols-3 gap-4">
                 <div class="bg-[#2A3943] p-4 rounded-lg">
-                    <h4 class="text-[#ADFF2C] font-semibold mb-2">
+                    <h4
+                        class="text-[#ADFF2C] font-semibold mb-2 text-center pt-4 text-2xl"
+                    >
                         Mendorong Kualitas
                     </h4>
-                    <p>
+                    <p class="mx-auto text-center pt-4">
                         Kami berkomitmen memastikan produk dan layanan yang kami
                         ekspor adalah yang terbaik dengan meningkatkan kualitas
                         barang dan jasa agar bisa bersaing di pasar
@@ -64,19 +70,23 @@
                     </p>
                 </div>
                 <div class="bg-[#2A3943] p-4 rounded-lg">
-                    <h4 class="text-[#ADFF2C] font-semibold mb-2">
+                    <h4
+                        class="text-[#ADFF2C] font-semibold mb-2 text-center pt-4 text-2xl"
+                    >
                         Inovasi dan Pengembangan
                     </h4>
-                    <p>
+                    <p class="mx-auto text-center pt-4">
                         Kami terus berinovasi dan mengembangkan produk agar
                         tetap unggul dan sesuai dengan kebutuhan pasar global.
                     </p>
                 </div>
                 <div class="bg-[#2A3943] p-4 rounded-lg">
-                    <h4 class="text-[#ADFF2C] font-semibold mb-2">
+                    <h4
+                        class="text-[#ADFF2C] font-semibold mb-2 text-center pt-4 text-2xl"
+                    >
                         Kolaborasi
                     </h4>
-                    <p>
+                    <p class="mx-auto text-center pt-4">
                         Kami akan secara aktif menjalin kerja sama dengan
                         berbagai pihak untuk memperluas jaringan dan
                         meningkatkan sinergi usaha.
@@ -84,32 +94,10 @@
                 </div>
             </div>
         </div>
-
-        <!-- Section: Didirikan di Jakarta -->
-        <div class="text-center">
-            <h3 class="text-[#ADFF2C] text-xl font-bold mb-4">
-                Didirikan di Jakarta
-            </h3>
-            <p class="max-w-2xl mx-auto mb-4">
-                Jakarta adalah tempat PT. Exploresia Growth Seedonesia berdiri
-                dan memulai perjalanannya dalam dunia ekspor. Kami berkomitmen
-                untuk mendukung pertumbuhan dan perkembangan ekonomi lokal serta
-                membawa produk-produk Indonesia ke pasar global.
-            </p>
-            <img
-                src="path_to_image/jakarta_image.jpg"
-                alt="Jakarta"
-                class="mx-auto w-full max-w-3xl rounded-lg"
-            />
-        </div>
     </div>
 </template>
 
-<script>
-export default {
-    name: "AboutUs",
-};
-</script>
+<script setup></script>
 
 <style scoped>
 /* Add any additional custom styles if needed */

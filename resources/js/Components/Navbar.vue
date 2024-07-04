@@ -65,21 +65,21 @@
             <div
                 class="flex flex-col md:mx-8 items-center md:flex-row space-y-4 md:space-y-0 md:space-x-4"
             >
-                <inertia-link href="/auth/google">
+                <Link href="/dashboard">
                     <button
                         class="rounded-xl w-24 h-10 bg-white/25 text-md font-bold drop-shadow-lg"
                     >
                         Login
                     </button>
-                </inertia-link>
+                </Link>
 
-                <a href="register">
+                <Link href="/register">
                     <button
                         class="rounded-xl w-24 h-10 bg-[#ADFF2C] text-[#1D2F1A] text-md font-bold drop-shadow-lg"
                     >
                         Register
                     </button>
-                </a>
+                </Link>
             </div>
             <div class="pr-0 md:pr-5 mt-4 md:mt-0">
                 <a href="/profile">
@@ -92,7 +92,7 @@
 
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from "vue";
-import { InertiaLink } from '@inertiajs/inertia-vue3';
+import { Link } from "@inertiajs/inertia-vue3"; // Pastikan import yang benar
 
 const currentRoute = ref(window.location.pathname);
 const menuItems = ref([

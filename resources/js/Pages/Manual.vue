@@ -8,7 +8,7 @@
 <script setup>
 import AppLayout from "@/Layouts/AppLayout.vue";
 import ManualCardComponent from "@/Components/ManualCardComponent.vue";
-import { Head } from "@inertiajs/vue3";
+import { Head } from "@inertiajs/inertia-vue3"; // Pastikan import ini benar
 import { ref } from "vue";
 
 const data = ref([

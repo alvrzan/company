@@ -1,5 +1,5 @@
 <template>
-    <Head title="EsGS" />
+    <Head title="EGS" />
     <AppLayout>
         <AboutCompanyComponent></AboutCompanyComponent>
     </AppLayout>
