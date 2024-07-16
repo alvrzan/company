@@ -6,6 +6,7 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Inertia\Inertia;
+use Illuminate\Support\Facades\Auth; // Pastikan untuk mengimpor Auth
 
 class UserController extends Controller
 {
@@ -35,5 +36,11 @@ class UserController extends Controller
 
         return redirect()->route('home')
             ->with('success', 'User created successfully.');
+    }
+
+    public function show()
+    {
+        // Mengambil data pengguna saat ini
+        return response()->json(Auth::user());
     }
 }

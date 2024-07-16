@@ -1,9 +1,10 @@
 <?php
 
+use Inertia\Inertia;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Application;
 use App\Http\Controllers\UserController;
-use Illuminate\Support\Facades\Route;
-use Inertia\Inertia;
 
 /*
 |--------------------------------------------------------------------------
@@ -60,6 +61,12 @@ Route::middleware([
     'verified',
 ])->group(function () {
     Route::get('/dashboard', function () {
-        return Inertia::render('Dashboard');
+        return Inertia::render('Dashboard', [
+            'user' => Auth::user(),
+        ]);
     })->name('dashboard');
 });
+
+
+// Route untuk mendapatkan data pengguna
+Route::get('/api/user', [UserController::class, 'show'])->middleware('auth');
