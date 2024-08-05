@@ -1,10 +1,12 @@
 <?php
 
+use App\Models\User;
 use Inertia\Inertia;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Application;
 use App\Http\Controllers\UserController;
+use Laravel\Socialite\Facades\Socialite;
 
 /*
 |--------------------------------------------------------------------------
@@ -69,4 +71,9 @@ Route::middleware([
 
 
 // Route untuk mendapatkan data pengguna
-Route::get('/api/user', [UserController::class, 'show'])->middleware('auth');
+// Route::get('/api/user', [UserController::class, 'show'])->middleware('auth');
+
+
+Route::get('/auth/redirect', function () {
+    return Socialite::driver('google')->redirect();
+});

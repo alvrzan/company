@@ -47,7 +47,12 @@ const submit = () => {
             </div>
 
             <div class="mt-6">
-                <button
+                <div>
+                    <a class=" text-black" href="/auth/redirect"></a>
+                </div>
+                
+                <Link
+                    href="/auth/redirec"
                     class="active:bg-gray-900 active:-translate-y-1 transition-all active:text-white w-full flex items-center justify-center gap-x-2 py-2 bg-white rounded-lg text-[#000000BF] hover:bg-gray-200 ring-2 ring-blue-400"
                 >
                     <span class="font-bold whitespace-nowrap"
@@ -58,7 +63,7 @@ const submit = () => {
                         alt="Google Logo"
                         class="w-6 h-6"
                     />
-                </button>
+                </Link>
             </div>
 
             <div class="relative my-6">
